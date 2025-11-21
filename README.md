@@ -126,8 +126,8 @@ Portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/shradul9728/CSE-111-Shradul-Sharma-.git
-   cd CSE-111-Shradul-Sharma-
+   git clone https://github.com/shradul9728/CSE-111.git
+   cd CSE-111
    ```
 
 2. **Open locally**
