@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Team of Five</title>
+    <meta name="description" content="Interactive portfolio showcasing the work of five talented individuals">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" class="nav-link active">Home</a></li>
+                <li role="none"><a href="#individual-1" role="menuitem" class="nav-link">Shradul</a></li>
+                <li role="none"><a href="#individual-2" role="menuitem" class="nav-link">Ritesh</a></li>
+                <li role="none"><a href="#individual-3" role="menuitem" class="nav-link">Harshwardhan</a></li>
+                <li role="none"><a href="#individual-4" role="menuitem" class="nav-link">Tanu</a></li>
+                <li role="none"><a href="#individual-5" role="menuitem" class="nav-link">George</a></li>
+                <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle navigation menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Meet Our <span class="highlight">Talented Team</span></h1>
+                <p class="hero-subtitle">Discover the unique skills and innovative projects of five exceptional individuals</p>
+                <button class="cta-button" onclick="scrollToSection('individual-1')">
+                    Explore Portfolios
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="assets/images/Entry.png" alt="Team Portfolio" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'floating-cards\'><div class=\'card card-1\'></div><div class=\'card card-2\'></div><div class=\'card card-3\'></div><div class=\'card card-4\'></div><div class=\'card card-5\'></div></div>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual 1: Alex Chen - Full Stack Developer -->
+    <section id="individual-1" class="individual-section">
+        <div class="section-container">
+            <div class="individual-content">
+                <div class="individual-info">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="assets/images/shradul-profile.jpg" alt="Shradul Sharma" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="profile-details">
+                            <h2 class="individual-name">Shradul Sharma</h2>
+                            <p class="individual-title">Tech Enthusiast & Aspiring Developer</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">C Programming</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">App Development</span>
+                            <span class="skill-tag">Cybersecurity</span>
+                            <span class="skill-tag">Open Source</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-showcase">
+                    <h3>Featured Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="1">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>C++ Learning Projects</h4>
+                                <p>Collection of C++ programs and algorithms developed during learning journey at HIIT Ambala</p>
+                                <div class="project-tech">
+                                    <span>C++</span>
+                                    <span>Algorithms</span>
+                                    <span>Data Structures</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="2">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Cybersecurity Learning</h4>
+                                <p>Exploring cybersecurity concepts and ethical hacking through hands-on practice and research</p>
+                                <div class="project-tech">
+                                    <span>Security</span>
+                                    <span>Ethical Hacking</span>
+                                    <span>Research</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="3">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Open Source Contributions</h4>
+                                <p>Contributing to open-source repositories and building projects to enhance development skills</p>
+                                <div class="project-tech">
+                                    <span>Git</span>
+                                    <span>GitHub</span>
+                                    <span>Collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual 2: Sarah Johnson - UX/UI Designer -->
+    <section id="individual-2" class="individual-section">
+        <div class="section-container">
+            <div class="individual-content">
+                <div class="individual-info">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="assets/images/ritesh-profile.jpg" alt="Ritesh Raj" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="profile-details">
+                            <h2 class="individual-name">Ritesh Raj</h2>
+                            <p class="individual-title">Motivated Learner & Academic Achiever</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Reading</span>
+                            <span class="skill-tag">Sports</span>
+                            <span class="skill-tag">Technology</span>
+                            <span class="skill-tag">Photography</span>
+                            <span class="skill-tag">Coding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-showcase">
+                    <h3>Featured Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="4">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Academic Excellence</h4>
+                                <p>Strong academic foundation from Mount Litera Zee School and Green Valley International School</p>
+                                <div class="project-tech">
+                                    <span>Leadership</span>
+                                    <span>Communication</span>
+                                    <span>Discipline</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="5">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Creative Photography</h4>
+                                <p>Exploring creative expression through photography and visual storytelling</p>
+                                <div class="project-tech">
+                                    <span>Photography</span>
+                                    <span>Creativity</span>
+                                    <span>Visual Arts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="6">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Learning & Development</h4>
+                                <p>Continuous learning journey in technology, coding, and personal growth</p>
+                                <div class="project-tech">
+                                    <span>Coding</span>
+                                    <span>Technology</span>
+                                    <span>Self-Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual 3: Michael Rodriguez - Data Scientist -->
+    <section id="individual-3" class="individual-section">
+        <div class="section-container">
+            <div class="individual-content">
+                <div class="individual-info">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="assets/images/harshwardhan-profile.jpg" alt="Harshwardhan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="profile-details">
+                            <h2 class="individual-name">Harshwardhan</h2>
+                            <p class="individual-title">Motivated Learner & Creative Thinker</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Creative Thinking</span>
+                            <span class="skill-tag">Sports</span>
+                            <span class="skill-tag">Drawing</span>
+                            <span class="skill-tag">Music</span>
+                            <span class="skill-tag">Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-showcase">
+                    <h3>Featured Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="7">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Academic Foundation</h4>
+                                <p>Strong educational background from DAV Bakhri, Muzaffarpur with focus on discipline and communication</p>
+                                <div class="project-tech">
+                                    <span>Discipline</span>
+                                    <span>Communication</span>
+                                    <span>Academic Excellence</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="8">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Creative Arts</h4>
+                                <p>Exploring creativity through drawing, music and various artistic endeavors</p>
+                                <div class="project-tech">
+                                    <span>Drawing</span>
+                                    <span>Music</span>
+                                    <span>Creative Expression</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="9">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Personal Growth</h4>
+                                <p>Continuous learning and development in personal and professional aspects</p>
+                                <div class="project-tech">
+                                    <span>Self-Improvement</span>
+                                    <span>Learning</span>
+                                    <span>Growth Mindset</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual 4: Emma Thompson - DevOps Engineer -->
+    <section id="individual-4" class="individual-section">
+        <div class="section-container">
+            <div class="individual-content">
+                <div class="individual-info">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="assets/images/tanu-profile.jpg" alt="Tanu Yadav" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="profile-details">
+                            <h2 class="individual-name">Tanu Yadav</h2>
+                            <p class="individual-title">Enthusiastic Learner & Creative Individual</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Quick Learning</span>
+                            <span class="skill-tag">Positive Attitude</span>
+                            <span class="skill-tag">Drawing</span>
+                            <span class="skill-tag">Music</span>
+                            <span class="skill-tag">Fitness</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-showcase">
+                    <h3>Featured Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="10">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Academic Excellence</h4>
+                                <p>Strong educational foundation from Scion International School, Varanasi with focus on discipline and growth</p>
+                                <div class="project-tech">
+                                    <span>Education</span>
+                                    <span>Discipline</span>
+                                    <span>Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="11">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Fitness & Wellness</h4>
+                                <p>Maintaining physical and mental wellness through fitness activities and outdoor pursuits</p>
+                                <div class="project-tech">
+                                    <span>Fitness</span>
+                                    <span>Wellness</span>
+                                    <span>Outdoor Activities</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="12">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Social & Creative Skills</h4>
+                                <p>Building relationships and expressing creativity through art, music, and social connections</p>
+                                <div class="project-tech">
+                                    <span>Social Skills</span>
+                                    <span>Creativity</span>
+                                    <span>Art & Music</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual 5: David Kim - Mobile Developer -->
+    <section id="individual-5" class="individual-section">
+        <div class="section-container">
+            <div class="individual-content">
+                <div class="individual-info">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="assets/images/george-profile.jpg" alt="George Chacko" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                        <div class="profile-details">
+                            <h2 class="individual-name">George Chacko</h2>
+                            <p class="individual-title">First-Year Tech Student & Aspiring Developer</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Technology</span>
+                            <span class="skill-tag">Engineering</span>
+                            <span class="skill-tag">Software Design</span>
+                            <span class="skill-tag">User Experience</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-showcase">
+                    <h3>Featured Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="13">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Academic Journey at LPU</h4>
+                                <p>First-year student exploring technology, engineering, and digital systems foundations</p>
+                                <div class="project-tech">
+                                    <span>Engineering</span>
+                                    <span>Technology</span>
+                                    <span>Digital Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="14">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Personal Website Development</h4>
+                                <p>Created this website to document growth, share projects, and express tech interests</p>
+                                <div class="project-tech">
+                                    <span>Web Development</span>
+                                    <span>Portfolio</span>
+                                    <span>Documentation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="15">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Future Development Goals</h4>
+                                <p>Building technical abilities, collaborating with peers, and contributing to meaningful projects</p>
+                                <div class="project-tech">
+                                    <span>Skill Building</span>
+                                    <span>Collaboration</span>
+                                    <span>Innovation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p>Interested in working with our talented team? We'd love to hear from you!</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>team@portfolio.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Showcasing exceptional talent through innovative design and technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#individual-1">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="modal-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-description"></p>
+                    <div class="modal-tech"></div>
+                    <div class="modal-links">
+                        <a href="#" class="modal-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="modal-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
