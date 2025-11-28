@@ -4,7 +4,8 @@ A modern, responsive portfolio website showcasing the work of five talented indi
 
 ## 🚀 Live Demo
 
-**Website**: https://shradul9728.github.io/CSE-111
+**Website**:https://ytanu7757.github.io/CSE-111-Tanu-Yadav/
+
 
 ## 🌟 Overview
 
