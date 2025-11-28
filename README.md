@@ -268,8 +268,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, suggestions, or collaboration opportunities:
 
-- **Repository**: https://github.com/shradul9728/CSE-111
-- **Live Website**: https://shradul9728.github.io/CSE-111
+- **Repository**: https://ytanu7757.github.io/CSE-111-Tanu-Yadav/
+
+- **Live Website**: https://ytanu7757.github.io/CSE-111-Tanu-Yadav/
+
 - **Issues**: Use GitHub Issues for bug reports and feature requests
 
 ---
